@@ -24,10 +24,16 @@ $(function() {
     // Make sure to preventDefault on a submit event.
     event.preventDefault();
 
+    let name = $("#ca").val().trim();
+
+    // Don't let them add a blank burger
+    if (name == "")
+      return;
+
     //console.log("Form Adding burger ", $("#ca").val().trim())
 
     var newBurger = {
-      name: $("#ca").val().trim(),
+      name: name,
       devoured: false
     };
 
