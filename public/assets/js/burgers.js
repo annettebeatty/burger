@@ -13,7 +13,7 @@ $(function() {
       data: newBurgerState
     }).then(
       function() {
-        console.log("burger devoured ", newBurgerState);
+        // console.log("burger devoured ", newBurgerState);
         // Reload the page to get the updated list
         location.reload();
       }
@@ -24,21 +24,21 @@ $(function() {
     // Make sure to preventDefault on a submit event.
     event.preventDefault();
 
-    console.log("Form Adding burger ", $("#ca").val().trim())
+    //console.log("Form Adding burger ", $("#ca").val().trim())
 
     var newBurger = {
       name: $("#ca").val().trim(),
       devoured: false
     };
 
-    console.log("Sending to POST ", newBurger);
+    //console.log("Sending to POST ", newBurger);
     // Send the POST request.
     $.ajax("/api/burger", {
       type: "POST",
       data: newBurger
     }).then(
       function() {
-        console.log("created new burger");
+        //console.log("created new burger");
         // Reload the page to get the updated list
         location.reload();
       }
