@@ -9,7 +9,7 @@ The burger application is a node server and utilizes the node express framework,
 ### Usage instructions
 
 When the user is presented the webpage, they begin by adding a burger in the text area at the buttom of the page and then submit.  The entries are put into the MySQL database and displayed on the left side of the page.
-<img width="1028" alt="friend" src="./public/assets/images/burger1.png">
+<img width="1028" alt="friend" src="./public/assets/images/burger2.png">
 
 Displayed burgers have associated "Devour It!" buttons.  The user can click on these buttons and the burgers will move to be displayed on the right side with it's state becoming "Devoured!"
 <img width="1028" alt="friend" src="./public/assets/images/burger1.png">
